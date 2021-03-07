@@ -1,0 +1,38 @@
+{
+  "name": "io.github.lmikoto.railgun.TestClass",
+  "annotations": [
+    {
+      "name": "lombok.Data",
+      "expr": "@Data"
+    }
+  ],
+  "extend": [
+    {
+      "name": "io.github.lmikoto.railgun.TestSupperClass"
+    }
+  ],
+  "modifiers": [
+    "public"
+  ],
+  "methods": [
+    {
+      "name": "test",
+      "params": {
+        "test1": {
+          "name": "io.github.lmikoto.railgun.TestSupperClass"
+        }
+      },
+      "annotations": [
+        {
+          "name": "lombok.SneakyThrows",
+          "expr": "@SneakyThrows"
+        }
+      ]
+    }
+  ],
+  "fields": {
+    "test1": {
+      "name": "io.github.lmikoto.railgun.TestClass"
+    }
+  }
+}

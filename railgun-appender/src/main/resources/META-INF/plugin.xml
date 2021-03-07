@@ -1,0 +1,26 @@
+<idea-plugin>
+    <id>io.github.lmikoto.railgun</id>
+    <name>Railgun-Appender</name>
+    <version>1.0.0</version>
+    <vendor email="lmikoto@outlook.com" url="https://github.com/lmikoto">lmikoto</vendor>
+
+    <description><![CDATA[
+    Enter short description for your plugin here.<br>
+    <em>most HTML tags may be used</em>
+    ]]></description>
+
+
+    <depends>com.intellij.modules.java</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <applicationConfigurable groupId="tools" id="railgun.appender" instance="io.github.lmikoto.railgun.configurable.TemplateConfigurable">
+<!--            <configurable id="railgun.appender.template" instance="io.github.lmikoto.railgun.configurable.TemplateConfigurable"/>-->
+        </applicationConfigurable>
+
+    </extensions>
+
+    <actions>
+    </actions>
+
+</idea-plugin>

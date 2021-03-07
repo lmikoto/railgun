@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '0.6.5'
+}
+
+dependencies {
+    compile(project(':railgun-core'))
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+intellij {
+    version '2020.2.2'
+    sandboxDirectory = project.rootDir.canonicalPath + "/.sandbox"
+    plugins = ['java']
+}

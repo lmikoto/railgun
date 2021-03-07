@@ -1,0 +1,6 @@
+rootProject.name = 'Railgun'
+include 'railgun-core'
+//include 'railgun-generator'
+include 'railgun-appender'
+include 'railgun-plugin-common'
+
