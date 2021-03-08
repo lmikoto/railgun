@@ -52,7 +52,7 @@ public class TemplateConfigurable extends JBPanel implements Configurable{
         setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
         templateTree = new Tree();
 //        templateTree.putClientProperty("JTree.lineStyle", "Horizontal");
-        templateTree.setRootVisible(true);
+        templateTree.setRootVisible(false);
         templateTree.setShowsRootHandles(true);
         templateTree.getSelectionModel().setSelectionMode(TreeSelectionModel.SINGLE_TREE_SELECTION);
         templateTree.setCellRenderer(new TemplateTreeCellRenderer());
